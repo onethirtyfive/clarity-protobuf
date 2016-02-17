@@ -1924,6 +1924,637 @@ public final class NetworkBaseTypes {
     // @@protoc_insertion_point(class_scope:CMsgQAngle)
   }
 
+  public interface CMsgRGBAOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:CMsgRGBA)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>optional int32 r = 1;</code>
+     */
+    boolean hasR();
+    /**
+     * <code>optional int32 r = 1;</code>
+     */
+    int getR();
+
+    /**
+     * <code>optional int32 g = 2;</code>
+     */
+    boolean hasG();
+    /**
+     * <code>optional int32 g = 2;</code>
+     */
+    int getG();
+
+    /**
+     * <code>optional int32 b = 3;</code>
+     */
+    boolean hasB();
+    /**
+     * <code>optional int32 b = 3;</code>
+     */
+    int getB();
+
+    /**
+     * <code>optional int32 a = 4;</code>
+     */
+    boolean hasA();
+    /**
+     * <code>optional int32 a = 4;</code>
+     */
+    int getA();
+  }
+  /**
+   * Protobuf type {@code CMsgRGBA}
+   */
+  public static final class CMsgRGBA extends
+      com.google.protobuf.GeneratedMessage implements
+      // @@protoc_insertion_point(message_implements:CMsgRGBA)
+      CMsgRGBAOrBuilder {
+    // Use CMsgRGBA.newBuilder() to construct.
+    private CMsgRGBA(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      super(builder);
+      this.unknownFields = builder.getUnknownFields();
+    }
+    private CMsgRGBA(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+
+    private static final CMsgRGBA defaultInstance;
+    public static CMsgRGBA getDefaultInstance() {
+      return defaultInstance;
+    }
+
+    public CMsgRGBA getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+
+    private final com.google.protobuf.UnknownFieldSet unknownFields;
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+        getUnknownFields() {
+      return this.unknownFields;
+    }
+    private CMsgRGBA(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      initFields();
+      int mutable_bitField0_ = 0;
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              r_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              g_ = input.readInt32();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              b_ = input.readInt32();
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
+              a_ = input.readInt32();
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e.getMessage()).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return skadistats.clarity.wire.common.proto.NetworkBaseTypes.internal_static_CMsgRGBA_descriptor;
+    }
+
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return skadistats.clarity.wire.common.proto.NetworkBaseTypes.internal_static_CMsgRGBA_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA.class, skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA.Builder.class);
+    }
+
+    public static com.google.protobuf.Parser<CMsgRGBA> PARSER =
+        new com.google.protobuf.AbstractParser<CMsgRGBA>() {
+      public CMsgRGBA parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new CMsgRGBA(input, extensionRegistry);
+      }
+    };
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<CMsgRGBA> getParserForType() {
+      return PARSER;
+    }
+
+    private int bitField0_;
+    public static final int R_FIELD_NUMBER = 1;
+    private int r_;
+    /**
+     * <code>optional int32 r = 1;</code>
+     */
+    public boolean hasR() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    /**
+     * <code>optional int32 r = 1;</code>
+     */
+    public int getR() {
+      return r_;
+    }
+
+    public static final int G_FIELD_NUMBER = 2;
+    private int g_;
+    /**
+     * <code>optional int32 g = 2;</code>
+     */
+    public boolean hasG() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    /**
+     * <code>optional int32 g = 2;</code>
+     */
+    public int getG() {
+      return g_;
+    }
+
+    public static final int B_FIELD_NUMBER = 3;
+    private int b_;
+    /**
+     * <code>optional int32 b = 3;</code>
+     */
+    public boolean hasB() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    /**
+     * <code>optional int32 b = 3;</code>
+     */
+    public int getB() {
+      return b_;
+    }
+
+    public static final int A_FIELD_NUMBER = 4;
+    private int a_;
+    /**
+     * <code>optional int32 a = 4;</code>
+     */
+    public boolean hasA() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    /**
+     * <code>optional int32 a = 4;</code>
+     */
+    public int getA() {
+      return a_;
+    }
+
+    private void initFields() {
+      r_ = 0;
+      g_ = 0;
+      b_ = 0;
+      a_ = 0;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, r_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt32(2, g_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeInt32(3, b_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeInt32(4, a_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, r_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, g_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, b_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, a_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+
+    private static final long serialVersionUID = 0L;
+    @java.lang.Override
+    protected java.lang.Object writeReplace()
+        throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+
+    public static skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+    public static skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input);
+    }
+    public static skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseDelimitedFrom(input, extensionRegistry);
+    }
+    public static skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input);
+    }
+    public static skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return PARSER.parseFrom(input, extensionRegistry);
+    }
+
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code CMsgRGBA}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:CMsgRGBA)
+        skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBAOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return skadistats.clarity.wire.common.proto.NetworkBaseTypes.internal_static_CMsgRGBA_descriptor;
+      }
+
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return skadistats.clarity.wire.common.proto.NetworkBaseTypes.internal_static_CMsgRGBA_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA.class, skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA.Builder.class);
+      }
+
+      // Construct using skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+
+      public Builder clear() {
+        super.clear();
+        r_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        g_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        b_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        a_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        return this;
+      }
+
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return skadistats.clarity.wire.common.proto.NetworkBaseTypes.internal_static_CMsgRGBA_descriptor;
+      }
+
+      public skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA getDefaultInstanceForType() {
+        return skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA.getDefaultInstance();
+      }
+
+      public skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA build() {
+        skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      public skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA buildPartial() {
+        skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA result = new skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.r_ = r_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.g_ = g_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.b_ = b_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.a_ = a_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA) {
+          return mergeFrom((skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA other) {
+        if (other == skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA.getDefaultInstance()) return this;
+        if (other.hasR()) {
+          setR(other.getR());
+        }
+        if (other.hasG()) {
+          setG(other.getG());
+        }
+        if (other.hasB()) {
+          setB(other.getB());
+        }
+        if (other.hasA()) {
+          setA(other.getA());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (skadistats.clarity.wire.common.proto.NetworkBaseTypes.CMsgRGBA) e.getUnfinishedMessage();
+          throw e;
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+      private int bitField0_;
+
+      private int r_ ;
+      /**
+       * <code>optional int32 r = 1;</code>
+       */
+      public boolean hasR() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      /**
+       * <code>optional int32 r = 1;</code>
+       */
+      public int getR() {
+        return r_;
+      }
+      /**
+       * <code>optional int32 r = 1;</code>
+       */
+      public Builder setR(int value) {
+        bitField0_ |= 0x00000001;
+        r_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 r = 1;</code>
+       */
+      public Builder clearR() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        r_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int g_ ;
+      /**
+       * <code>optional int32 g = 2;</code>
+       */
+      public boolean hasG() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      /**
+       * <code>optional int32 g = 2;</code>
+       */
+      public int getG() {
+        return g_;
+      }
+      /**
+       * <code>optional int32 g = 2;</code>
+       */
+      public Builder setG(int value) {
+        bitField0_ |= 0x00000002;
+        g_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 g = 2;</code>
+       */
+      public Builder clearG() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        g_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int b_ ;
+      /**
+       * <code>optional int32 b = 3;</code>
+       */
+      public boolean hasB() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      /**
+       * <code>optional int32 b = 3;</code>
+       */
+      public int getB() {
+        return b_;
+      }
+      /**
+       * <code>optional int32 b = 3;</code>
+       */
+      public Builder setB(int value) {
+        bitField0_ |= 0x00000004;
+        b_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 b = 3;</code>
+       */
+      public Builder clearB() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        b_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int a_ ;
+      /**
+       * <code>optional int32 a = 4;</code>
+       */
+      public boolean hasA() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      /**
+       * <code>optional int32 a = 4;</code>
+       */
+      public int getA() {
+        return a_;
+      }
+      /**
+       * <code>optional int32 a = 4;</code>
+       */
+      public Builder setA(int value) {
+        bitField0_ |= 0x00000008;
+        a_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>optional int32 a = 4;</code>
+       */
+      public Builder clearA() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        a_ = 0;
+        onChanged();
+        return this;
+      }
+
+      // @@protoc_insertion_point(builder_scope:CMsgRGBA)
+    }
+
+    static {
+      defaultInstance = new CMsgRGBA(true);
+      defaultInstance.initFields();
+    }
+
+    // @@protoc_insertion_point(class_scope:CMsgRGBA)
+  }
+
   public interface CMsgPlayerInfoOrBuilder extends
       // @@protoc_insertion_point(interface_extends:CMsgPlayerInfo)
       com.google.protobuf.MessageOrBuilder {
@@ -20212,6 +20843,11 @@ public final class NetworkBaseTypes {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_CMsgQAngle_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_CMsgRGBA_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_CMsgRGBA_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_CMsgPlayerInfo_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -20348,95 +20984,96 @@ public final class NetworkBaseTypes {
       "\n\026networkbasetypes.proto\"-\n\nCMsgVector\022\t" +
       "\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\"$\n\014CMsgV" +
       "ector2D\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\"-\n\nCMsgQAn" +
-      "gle\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\"\237\001\n" +
-      "\016CMsgPlayerInfo\022\014\n\004name\030\001 \001(\t\022\014\n\004xuid\030\002 " +
-      "\001(\006\022\016\n\006userid\030\003 \001(\005\022\017\n\007steamid\030\004 \001(\006\022\022\n\n" +
-      "fakeplayer\030\005 \001(\010\022\016\n\006ishltv\030\006 \001(\010\022\023\n\013cust" +
-      "omFiles\030\007 \003(\007\022\027\n\017filesDownloaded\030\010 \001(\005\"R" +
-      "\n\nCMsg_CVars\022\037\n\005cvars\030\001 \003(\0132\020.CMsg_CVars" +
-      ".CVar\032#\n\004CVar\022\014\n\004name\030\001 \001(\t\022\r\n\005value\030\002 \001",
-      "(\t\"\r\n\013CNETMsg_NOP\"\'\n\027CNETMsg_SplitScreen" +
-      "User\022\014\n\004slot\030\001 \001(\005\"\024\n\022CNETMsg_Disconnect" +
-      "\"|\n\014CNETMsg_File\022\023\n\013transfer_id\030\001 \001(\005\022\021\n" +
-      "\tfile_name\030\002 \001(\t\022\033\n\023is_replay_demo_file\030" +
-      "\003 \001(\010\022\014\n\004deny\030\004 \001(\010\022\031\n\021is_file_requested" +
-      "\030\005 \001(\010\"\317\001\n\014CNETMsg_Tick\022\014\n\004tick\030\001 \001(\r\022\026\n" +
-      "\016host_frametime\030\002 \001(\r\022$\n\034host_frametime_" +
-      "std_deviation\030\003 \001(\r\022\034\n\024host_computationt" +
-      "ime\030\004 \001(\r\022*\n\"host_computationtime_std_de" +
-      "viation\030\005 \001(\r\022)\n!host_framestarttime_std",
-      "_deviation\030\006 \001(\r\"$\n\021CNETMsg_StringCmd\022\017\n" +
-      "\007command\030\001 \001(\t\"1\n\021CNETMsg_SetConVar\022\034\n\007c" +
-      "onvars\030\001 \001(\0132\013.CMsg_CVars\"\212\001\n\023CNETMsg_Si" +
-      "gnonState\022\024\n\014signon_state\030\001 \001(\r\022\023\n\013spawn" +
-      "_count\030\002 \001(\r\022\032\n\022num_server_players\030\003 \001(\r" +
-      "\022\032\n\022players_networkids\030\004 \003(\t\022\020\n\010map_name" +
-      "\030\005 \001(\t\"\374\001\n\021CSVCMsg_GameEvent\022\022\n\nevent_na" +
-      "me\030\001 \001(\t\022\017\n\007eventid\030\002 \001(\005\022&\n\004keys\030\003 \003(\0132" +
-      "\030.CSVCMsg_GameEvent.key_t\032\231\001\n\005key_t\022\014\n\004t" +
-      "ype\030\001 \001(\005\022\022\n\nval_string\030\002 \001(\t\022\021\n\tval_flo",
-      "at\030\003 \001(\002\022\020\n\010val_long\030\004 \001(\005\022\021\n\tval_short\030" +
-      "\005 \001(\005\022\020\n\010val_byte\030\006 \001(\005\022\020\n\010val_bool\030\007 \001(" +
-      "\010\022\022\n\nval_uint64\030\010 \001(\004\"\205\001\n\026CSVCMsgList_Ga" +
-      "meEvents\022/\n\006events\030\001 \003(\0132\037.CSVCMsgList_G" +
-      "ameEvents.event_t\032:\n\007event_t\022\014\n\004tick\030\001 \001" +
-      "(\005\022!\n\005event\030\002 \001(\0132\022.CSVCMsg_GameEvent\"9\n" +
-      "\023CSVCMsg_UserMessage\022\020\n\010msg_type\030\001 \001(\005\022\020" +
-      "\n\010msg_data\030\002 \001(\014\"\217\001\n\030CSVCMsgList_UserMes" +
-      "sages\0225\n\010usermsgs\030\001 \003(\0132#.CSVCMsgList_Us" +
-      "erMessages.usermsg_t\032<\n\tusermsg_t\022\014\n\004tic",
-      "k\030\001 \001(\005\022!\n\003msg\030\002 \001(\0132\024.CSVCMsg_UserMessa" +
-      "ge\"\300\003\n\027CNETMsg_SpawnGroup_Load\022\021\n\tworldn" +
-      "ame\030\001 \001(\t\022\026\n\016entitylumpname\030\002 \001(\t\022\030\n\020ent" +
-      "ityfiltername\030\003 \001(\t\022\030\n\020spawngrouphandle\030" +
-      "\004 \001(\r\022\035\n\025spawngroupownerhandle\030\005 \001(\r\022%\n\020" +
-      "world_offset_pos\030\006 \001(\0132\013.CMsgVector\022\'\n\022w" +
-      "orld_offset_angle\030\007 \001(\0132\013.CMsgQAngle\022\032\n\022" +
-      "spawngroupmanifest\030\010 \001(\014\022\r\n\005flags\030\t \001(\r\022" +
-      "\021\n\ttickcount\030\n \001(\005\022\032\n\022manifestincomplete" +
-      "\030\013 \001(\010\022\026\n\016localnamefixup\030\014 \001(\t\022\027\n\017parent",
-      "namefixup\030\r \001(\t\022\034\n\024manifestloadpriority\030" +
-      "\016 \001(\005\022\024\n\014worldgroupid\030\017 \001(\r\022\030\n\020creations" +
-      "equence\030\020 \001(\r\"u\n!CNETMsg_SpawnGroup_Mani" +
-      "festUpdate\022\030\n\020spawngrouphandle\030\001 \001(\r\022\032\n\022" +
-      "spawngroupmanifest\030\002 \001(\014\022\032\n\022manifestinco" +
-      "mplete\030\003 \001(\010\"k\n\"CNETMsg_SpawnGroup_SetCr" +
-      "eationTick\022\030\n\020spawngrouphandle\030\001 \001(\r\022\021\n\t" +
-      "tickcount\030\002 \001(\005\022\030\n\020creationsequence\030\003 \001(" +
-      "\r\"W\n\031CNETMsg_SpawnGroup_Unload\022\030\n\020spawng" +
-      "rouphandle\030\001 \001(\r\022\r\n\005flags\030\002 \001(\r\022\021\n\ttickc",
-      "ount\030\003 \001(\005\"<\n CNETMsg_SpawnGroup_LoadCom" +
-      "pleted\022\030\n\020spawngrouphandle\030\001 \001(\r\"\360\002\n CSV" +
-      "CMsg_GameSessionConfiguration\022\026\n\016is_mult" +
-      "iplayer\030\001 \001(\010\022\027\n\017is_loadsavegame\030\002 \001(\010\022\031" +
-      "\n\021is_background_map\030\003 \001(\010\022\023\n\013is_headless" +
-      "\030\004 \001(\010\022\030\n\020min_client_limit\030\005 \001(\r\022\030\n\020max_" +
-      "client_limit\030\006 \001(\r\022\023\n\013max_clients\030\007 \001(\r\022" +
-      "\025\n\rtick_interval\030\010 \001(\007\022\020\n\010hostname\030\t \001(\t" +
-      "\022\024\n\014savegamename\030\n \001(\t\022\022\n\ns1_mapname\030\013 \001" +
-      "(\t\022\020\n\010gamemode\030\014 \001(\t\022\031\n\021server_ip_addres",
-      "s\030\r \001(\t\022\014\n\004data\030\016 \001(\014\022\024\n\014is_localonly\030\017 " +
-      "\001(\010\"\"\n CNETMsg_ReliableMessageEndMarker*" +
-      "\336\002\n\014NET_Messages\022\013\n\007net_NOP\020\000\022\022\n\016net_Dis" +
-      "connect\020\001\022\014\n\010net_File\020\002\022\027\n\023net_SplitScre" +
-      "enUser\020\003\022\014\n\010net_Tick\020\004\022\021\n\rnet_StringCmd\020" +
-      "\005\022\021\n\rnet_SetConVar\020\006\022\023\n\017net_SignonState\020" +
-      "\007\022\027\n\023net_SpawnGroup_Load\020\010\022!\n\035net_SpawnG" +
-      "roup_ManifestUpdate\020\t\022\"\n\036net_SpawnGroup_" +
-      "SetCreationTick\020\013\022\031\n\025net_SpawnGroup_Unlo" +
-      "ad\020\014\022 \n\034net_SpawnGroup_LoadCompleted\020\r\022 ",
-      "\n\034net_ReliableMessageEndMarker\020\016*\353\002\n\021Spa" +
-      "wnGroupFlags_t\022\'\n#SPAWN_GROUP_LOAD_ENTIT" +
-      "IES_FROM_SAVE\020\001\022#\n\037SPAWN_GROUP_DONT_SPAW" +
-      "N_ENTITIES\020\002\022!\n\035SPAWN_GROUP_SYNCHRONOUS_" +
-      "SPAWN\020\004\022&\n\"SPAWN_GROUP_IS_INITIAL_SPAWN_" +
-      "GROUP\020\010\022+\n\'SPAWN_GROUP_CREATE_CLIENT_ONL" +
-      "Y_ENTITIES\020\020\022\035\n\031SPAWN_GROUP_SAVE_ENTITIE" +
-      "S\020 \022\"\n\036SPAWN_GROUP_BLOCK_UNTIL_LOADED\020@\022" +
-      "$\n\037SPAWN_GROUP_LOAD_STREAMING_DATA\020\200\001\022\'\n" +
-      "\"SPAWN_GROUP_CREATE_NEW_SCENE_WORLD\020\200\002B;",
-      "\n$skadistats.clarity.wire.common.protoB\020" +
-      "NetworkBaseTypes\200\001\000"
+      "gle\022\t\n\001x\030\001 \001(\002\022\t\n\001y\030\002 \001(\002\022\t\n\001z\030\003 \001(\002\"6\n\010" +
+      "CMsgRGBA\022\t\n\001r\030\001 \001(\005\022\t\n\001g\030\002 \001(\005\022\t\n\001b\030\003 \001(" +
+      "\005\022\t\n\001a\030\004 \001(\005\"\237\001\n\016CMsgPlayerInfo\022\014\n\004name\030" +
+      "\001 \001(\t\022\014\n\004xuid\030\002 \001(\006\022\016\n\006userid\030\003 \001(\005\022\017\n\007s" +
+      "teamid\030\004 \001(\006\022\022\n\nfakeplayer\030\005 \001(\010\022\016\n\006ishl" +
+      "tv\030\006 \001(\010\022\023\n\013customFiles\030\007 \003(\007\022\027\n\017filesDo" +
+      "wnloaded\030\010 \001(\005\"R\n\nCMsg_CVars\022\037\n\005cvars\030\001 ",
+      "\003(\0132\020.CMsg_CVars.CVar\032#\n\004CVar\022\014\n\004name\030\001 " +
+      "\001(\t\022\r\n\005value\030\002 \001(\t\"\r\n\013CNETMsg_NOP\"\'\n\027CNE" +
+      "TMsg_SplitScreenUser\022\014\n\004slot\030\001 \001(\005\"\024\n\022CN" +
+      "ETMsg_Disconnect\"|\n\014CNETMsg_File\022\023\n\013tran" +
+      "sfer_id\030\001 \001(\005\022\021\n\tfile_name\030\002 \001(\t\022\033\n\023is_r" +
+      "eplay_demo_file\030\003 \001(\010\022\014\n\004deny\030\004 \001(\010\022\031\n\021i" +
+      "s_file_requested\030\005 \001(\010\"\317\001\n\014CNETMsg_Tick\022" +
+      "\014\n\004tick\030\001 \001(\r\022\026\n\016host_frametime\030\002 \001(\r\022$\n" +
+      "\034host_frametime_std_deviation\030\003 \001(\r\022\034\n\024h" +
+      "ost_computationtime\030\004 \001(\r\022*\n\"host_comput",
+      "ationtime_std_deviation\030\005 \001(\r\022)\n!host_fr" +
+      "amestarttime_std_deviation\030\006 \001(\r\"$\n\021CNET" +
+      "Msg_StringCmd\022\017\n\007command\030\001 \001(\t\"1\n\021CNETMs" +
+      "g_SetConVar\022\034\n\007convars\030\001 \001(\0132\013.CMsg_CVar" +
+      "s\"\212\001\n\023CNETMsg_SignonState\022\024\n\014signon_stat" +
+      "e\030\001 \001(\r\022\023\n\013spawn_count\030\002 \001(\r\022\032\n\022num_serv" +
+      "er_players\030\003 \001(\r\022\032\n\022players_networkids\030\004" +
+      " \003(\t\022\020\n\010map_name\030\005 \001(\t\"\374\001\n\021CSVCMsg_GameE" +
+      "vent\022\022\n\nevent_name\030\001 \001(\t\022\017\n\007eventid\030\002 \001(" +
+      "\005\022&\n\004keys\030\003 \003(\0132\030.CSVCMsg_GameEvent.key_",
+      "t\032\231\001\n\005key_t\022\014\n\004type\030\001 \001(\005\022\022\n\nval_string\030" +
+      "\002 \001(\t\022\021\n\tval_float\030\003 \001(\002\022\020\n\010val_long\030\004 \001" +
+      "(\005\022\021\n\tval_short\030\005 \001(\005\022\020\n\010val_byte\030\006 \001(\005\022" +
+      "\020\n\010val_bool\030\007 \001(\010\022\022\n\nval_uint64\030\010 \001(\004\"\205\001" +
+      "\n\026CSVCMsgList_GameEvents\022/\n\006events\030\001 \003(\013" +
+      "2\037.CSVCMsgList_GameEvents.event_t\032:\n\007eve" +
+      "nt_t\022\014\n\004tick\030\001 \001(\005\022!\n\005event\030\002 \001(\0132\022.CSVC" +
+      "Msg_GameEvent\"9\n\023CSVCMsg_UserMessage\022\020\n\010" +
+      "msg_type\030\001 \001(\005\022\020\n\010msg_data\030\002 \001(\014\"\217\001\n\030CSV" +
+      "CMsgList_UserMessages\0225\n\010usermsgs\030\001 \003(\0132",
+      "#.CSVCMsgList_UserMessages.usermsg_t\032<\n\t" +
+      "usermsg_t\022\014\n\004tick\030\001 \001(\005\022!\n\003msg\030\002 \001(\0132\024.C" +
+      "SVCMsg_UserMessage\"\300\003\n\027CNETMsg_SpawnGrou" +
+      "p_Load\022\021\n\tworldname\030\001 \001(\t\022\026\n\016entitylumpn" +
+      "ame\030\002 \001(\t\022\030\n\020entityfiltername\030\003 \001(\t\022\030\n\020s" +
+      "pawngrouphandle\030\004 \001(\r\022\035\n\025spawngroupowner" +
+      "handle\030\005 \001(\r\022%\n\020world_offset_pos\030\006 \001(\0132\013" +
+      ".CMsgVector\022\'\n\022world_offset_angle\030\007 \001(\0132" +
+      "\013.CMsgQAngle\022\032\n\022spawngroupmanifest\030\010 \001(\014" +
+      "\022\r\n\005flags\030\t \001(\r\022\021\n\ttickcount\030\n \001(\005\022\032\n\022ma",
+      "nifestincomplete\030\013 \001(\010\022\026\n\016localnamefixup" +
+      "\030\014 \001(\t\022\027\n\017parentnamefixup\030\r \001(\t\022\034\n\024manif" +
+      "estloadpriority\030\016 \001(\005\022\024\n\014worldgroupid\030\017 " +
+      "\001(\r\022\030\n\020creationsequence\030\020 \001(\r\"u\n!CNETMsg" +
+      "_SpawnGroup_ManifestUpdate\022\030\n\020spawngroup" +
+      "handle\030\001 \001(\r\022\032\n\022spawngroupmanifest\030\002 \001(\014" +
+      "\022\032\n\022manifestincomplete\030\003 \001(\010\"k\n\"CNETMsg_" +
+      "SpawnGroup_SetCreationTick\022\030\n\020spawngroup" +
+      "handle\030\001 \001(\r\022\021\n\ttickcount\030\002 \001(\005\022\030\n\020creat" +
+      "ionsequence\030\003 \001(\r\"W\n\031CNETMsg_SpawnGroup_",
+      "Unload\022\030\n\020spawngrouphandle\030\001 \001(\r\022\r\n\005flag" +
+      "s\030\002 \001(\r\022\021\n\ttickcount\030\003 \001(\005\"<\n CNETMsg_Sp" +
+      "awnGroup_LoadCompleted\022\030\n\020spawngrouphand" +
+      "le\030\001 \001(\r\"\360\002\n CSVCMsg_GameSessionConfigur" +
+      "ation\022\026\n\016is_multiplayer\030\001 \001(\010\022\027\n\017is_load" +
+      "savegame\030\002 \001(\010\022\031\n\021is_background_map\030\003 \001(" +
+      "\010\022\023\n\013is_headless\030\004 \001(\010\022\030\n\020min_client_lim" +
+      "it\030\005 \001(\r\022\030\n\020max_client_limit\030\006 \001(\r\022\023\n\013ma" +
+      "x_clients\030\007 \001(\r\022\025\n\rtick_interval\030\010 \001(\007\022\020" +
+      "\n\010hostname\030\t \001(\t\022\024\n\014savegamename\030\n \001(\t\022\022",
+      "\n\ns1_mapname\030\013 \001(\t\022\020\n\010gamemode\030\014 \001(\t\022\031\n\021" +
+      "server_ip_address\030\r \001(\t\022\014\n\004data\030\016 \001(\014\022\024\n" +
+      "\014is_localonly\030\017 \001(\010\"\"\n CNETMsg_ReliableM" +
+      "essageEndMarker*\336\002\n\014NET_Messages\022\013\n\007net_" +
+      "NOP\020\000\022\022\n\016net_Disconnect\020\001\022\014\n\010net_File\020\002\022" +
+      "\027\n\023net_SplitScreenUser\020\003\022\014\n\010net_Tick\020\004\022\021" +
+      "\n\rnet_StringCmd\020\005\022\021\n\rnet_SetConVar\020\006\022\023\n\017" +
+      "net_SignonState\020\007\022\027\n\023net_SpawnGroup_Load" +
+      "\020\010\022!\n\035net_SpawnGroup_ManifestUpdate\020\t\022\"\n" +
+      "\036net_SpawnGroup_SetCreationTick\020\013\022\031\n\025net",
+      "_SpawnGroup_Unload\020\014\022 \n\034net_SpawnGroup_L" +
+      "oadCompleted\020\r\022 \n\034net_ReliableMessageEnd" +
+      "Marker\020\016*\353\002\n\021SpawnGroupFlags_t\022\'\n#SPAWN_" +
+      "GROUP_LOAD_ENTITIES_FROM_SAVE\020\001\022#\n\037SPAWN" +
+      "_GROUP_DONT_SPAWN_ENTITIES\020\002\022!\n\035SPAWN_GR" +
+      "OUP_SYNCHRONOUS_SPAWN\020\004\022&\n\"SPAWN_GROUP_I" +
+      "S_INITIAL_SPAWN_GROUP\020\010\022+\n\'SPAWN_GROUP_C" +
+      "REATE_CLIENT_ONLY_ENTITIES\020\020\022\035\n\031SPAWN_GR" +
+      "OUP_SAVE_ENTITIES\020 \022\"\n\036SPAWN_GROUP_BLOCK" +
+      "_UNTIL_LOADED\020@\022$\n\037SPAWN_GROUP_LOAD_STRE",
+      "AMING_DATA\020\200\001\022\'\n\"SPAWN_GROUP_CREATE_NEW_" +
+      "SCENE_WORLD\020\200\002B;\n$skadistats.clarity.wir" +
+      "e.common.protoB\020NetworkBaseTypes\200\001\000"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -20468,14 +21105,20 @@ public final class NetworkBaseTypes {
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CMsgQAngle_descriptor,
         new java.lang.String[] { "X", "Y", "Z", });
-    internal_static_CMsgPlayerInfo_descriptor =
+    internal_static_CMsgRGBA_descriptor =
       getDescriptor().getMessageTypes().get(3);
+    internal_static_CMsgRGBA_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+        internal_static_CMsgRGBA_descriptor,
+        new java.lang.String[] { "R", "G", "B", "A", });
+    internal_static_CMsgPlayerInfo_descriptor =
+      getDescriptor().getMessageTypes().get(4);
     internal_static_CMsgPlayerInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CMsgPlayerInfo_descriptor,
         new java.lang.String[] { "Name", "Xuid", "Userid", "Steamid", "Fakeplayer", "Ishltv", "CustomFiles", "FilesDownloaded", });
     internal_static_CMsg_CVars_descriptor =
-      getDescriptor().getMessageTypes().get(4);
+      getDescriptor().getMessageTypes().get(5);
     internal_static_CMsg_CVars_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CMsg_CVars_descriptor,
@@ -20487,55 +21130,55 @@ public final class NetworkBaseTypes {
         internal_static_CMsg_CVars_CVar_descriptor,
         new java.lang.String[] { "Name", "Value", });
     internal_static_CNETMsg_NOP_descriptor =
-      getDescriptor().getMessageTypes().get(5);
+      getDescriptor().getMessageTypes().get(6);
     internal_static_CNETMsg_NOP_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CNETMsg_NOP_descriptor,
         new java.lang.String[] { });
     internal_static_CNETMsg_SplitScreenUser_descriptor =
-      getDescriptor().getMessageTypes().get(6);
+      getDescriptor().getMessageTypes().get(7);
     internal_static_CNETMsg_SplitScreenUser_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CNETMsg_SplitScreenUser_descriptor,
         new java.lang.String[] { "Slot", });
     internal_static_CNETMsg_Disconnect_descriptor =
-      getDescriptor().getMessageTypes().get(7);
+      getDescriptor().getMessageTypes().get(8);
     internal_static_CNETMsg_Disconnect_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CNETMsg_Disconnect_descriptor,
         new java.lang.String[] { });
     internal_static_CNETMsg_File_descriptor =
-      getDescriptor().getMessageTypes().get(8);
+      getDescriptor().getMessageTypes().get(9);
     internal_static_CNETMsg_File_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CNETMsg_File_descriptor,
         new java.lang.String[] { "TransferId", "FileName", "IsReplayDemoFile", "Deny", "IsFileRequested", });
     internal_static_CNETMsg_Tick_descriptor =
-      getDescriptor().getMessageTypes().get(9);
+      getDescriptor().getMessageTypes().get(10);
     internal_static_CNETMsg_Tick_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CNETMsg_Tick_descriptor,
         new java.lang.String[] { "Tick", "HostFrametime", "HostFrametimeStdDeviation", "HostComputationtime", "HostComputationtimeStdDeviation", "HostFramestarttimeStdDeviation", });
     internal_static_CNETMsg_StringCmd_descriptor =
-      getDescriptor().getMessageTypes().get(10);
+      getDescriptor().getMessageTypes().get(11);
     internal_static_CNETMsg_StringCmd_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CNETMsg_StringCmd_descriptor,
         new java.lang.String[] { "Command", });
     internal_static_CNETMsg_SetConVar_descriptor =
-      getDescriptor().getMessageTypes().get(11);
+      getDescriptor().getMessageTypes().get(12);
     internal_static_CNETMsg_SetConVar_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CNETMsg_SetConVar_descriptor,
         new java.lang.String[] { "Convars", });
     internal_static_CNETMsg_SignonState_descriptor =
-      getDescriptor().getMessageTypes().get(12);
+      getDescriptor().getMessageTypes().get(13);
     internal_static_CNETMsg_SignonState_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CNETMsg_SignonState_descriptor,
         new java.lang.String[] { "SignonState", "SpawnCount", "NumServerPlayers", "PlayersNetworkids", "MapName", });
     internal_static_CSVCMsg_GameEvent_descriptor =
-      getDescriptor().getMessageTypes().get(13);
+      getDescriptor().getMessageTypes().get(14);
     internal_static_CSVCMsg_GameEvent_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CSVCMsg_GameEvent_descriptor,
@@ -20547,7 +21190,7 @@ public final class NetworkBaseTypes {
         internal_static_CSVCMsg_GameEvent_key_t_descriptor,
         new java.lang.String[] { "Type", "ValString", "ValFloat", "ValLong", "ValShort", "ValByte", "ValBool", "ValUint64", });
     internal_static_CSVCMsgList_GameEvents_descriptor =
-      getDescriptor().getMessageTypes().get(14);
+      getDescriptor().getMessageTypes().get(15);
     internal_static_CSVCMsgList_GameEvents_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CSVCMsgList_GameEvents_descriptor,
@@ -20559,13 +21202,13 @@ public final class NetworkBaseTypes {
         internal_static_CSVCMsgList_GameEvents_event_t_descriptor,
         new java.lang.String[] { "Tick", "Event", });
     internal_static_CSVCMsg_UserMessage_descriptor =
-      getDescriptor().getMessageTypes().get(15);
+      getDescriptor().getMessageTypes().get(16);
     internal_static_CSVCMsg_UserMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CSVCMsg_UserMessage_descriptor,
         new java.lang.String[] { "MsgType", "MsgData", });
     internal_static_CSVCMsgList_UserMessages_descriptor =
-      getDescriptor().getMessageTypes().get(16);
+      getDescriptor().getMessageTypes().get(17);
     internal_static_CSVCMsgList_UserMessages_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CSVCMsgList_UserMessages_descriptor,
@@ -20577,43 +21220,43 @@ public final class NetworkBaseTypes {
         internal_static_CSVCMsgList_UserMessages_usermsg_t_descriptor,
         new java.lang.String[] { "Tick", "Msg", });
     internal_static_CNETMsg_SpawnGroup_Load_descriptor =
-      getDescriptor().getMessageTypes().get(17);
+      getDescriptor().getMessageTypes().get(18);
     internal_static_CNETMsg_SpawnGroup_Load_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CNETMsg_SpawnGroup_Load_descriptor,
         new java.lang.String[] { "Worldname", "Entitylumpname", "Entityfiltername", "Spawngrouphandle", "Spawngroupownerhandle", "WorldOffsetPos", "WorldOffsetAngle", "Spawngroupmanifest", "Flags", "Tickcount", "Manifestincomplete", "Localnamefixup", "Parentnamefixup", "Manifestloadpriority", "Worldgroupid", "Creationsequence", });
     internal_static_CNETMsg_SpawnGroup_ManifestUpdate_descriptor =
-      getDescriptor().getMessageTypes().get(18);
+      getDescriptor().getMessageTypes().get(19);
     internal_static_CNETMsg_SpawnGroup_ManifestUpdate_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CNETMsg_SpawnGroup_ManifestUpdate_descriptor,
         new java.lang.String[] { "Spawngrouphandle", "Spawngroupmanifest", "Manifestincomplete", });
     internal_static_CNETMsg_SpawnGroup_SetCreationTick_descriptor =
-      getDescriptor().getMessageTypes().get(19);
+      getDescriptor().getMessageTypes().get(20);
     internal_static_CNETMsg_SpawnGroup_SetCreationTick_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CNETMsg_SpawnGroup_SetCreationTick_descriptor,
         new java.lang.String[] { "Spawngrouphandle", "Tickcount", "Creationsequence", });
     internal_static_CNETMsg_SpawnGroup_Unload_descriptor =
-      getDescriptor().getMessageTypes().get(20);
+      getDescriptor().getMessageTypes().get(21);
     internal_static_CNETMsg_SpawnGroup_Unload_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CNETMsg_SpawnGroup_Unload_descriptor,
         new java.lang.String[] { "Spawngrouphandle", "Flags", "Tickcount", });
     internal_static_CNETMsg_SpawnGroup_LoadCompleted_descriptor =
-      getDescriptor().getMessageTypes().get(21);
+      getDescriptor().getMessageTypes().get(22);
     internal_static_CNETMsg_SpawnGroup_LoadCompleted_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CNETMsg_SpawnGroup_LoadCompleted_descriptor,
         new java.lang.String[] { "Spawngrouphandle", });
     internal_static_CSVCMsg_GameSessionConfiguration_descriptor =
-      getDescriptor().getMessageTypes().get(22);
+      getDescriptor().getMessageTypes().get(23);
     internal_static_CSVCMsg_GameSessionConfiguration_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CSVCMsg_GameSessionConfiguration_descriptor,
         new java.lang.String[] { "IsMultiplayer", "IsLoadsavegame", "IsBackgroundMap", "IsHeadless", "MinClientLimit", "MaxClientLimit", "MaxClients", "TickInterval", "Hostname", "Savegamename", "S1Mapname", "Gamemode", "ServerIpAddress", "Data", "IsLocalonly", });
     internal_static_CNETMsg_ReliableMessageEndMarker_descriptor =
-      getDescriptor().getMessageTypes().get(23);
+      getDescriptor().getMessageTypes().get(24);
     internal_static_CNETMsg_ReliableMessageEndMarker_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessage.FieldAccessorTable(
         internal_static_CNETMsg_ReliableMessageEndMarker_descriptor,
