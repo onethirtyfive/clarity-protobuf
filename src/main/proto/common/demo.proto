@@ -1,5 +1,3 @@
-option java_package = "skadistats.shrine.wire.common";
-
 option cc_generic_services = false;
 
 enum EDemoCommands {
