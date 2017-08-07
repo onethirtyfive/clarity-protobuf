@@ -1,4 +1,4 @@
-option java_package = "skadistats.clarity.wire.s2.proto";
+option java_package = "skadistats.shrine.wire.s2.proto";
 option java_outer_classname = "S2UserMessages";
 
 import "networkbasetypes.proto";
